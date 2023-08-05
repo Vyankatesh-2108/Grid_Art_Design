@@ -1,5 +1,5 @@
 
-var gridc = document.getElementById('colorPicker');
+var gridColor = document.getElementById('colorPicker');
 // Select size input
 var gridHeight = document.getElementById('inputHeight');
 var gridWidth = document.getElementById('inputWidth');
@@ -22,7 +22,7 @@ const grid = document.getElementById('pixelCanvas');
 	grid.addEventListener('click' , function(x) {
 		// the if statement to prevent coloring all the grid
 		if(x.target.nodeName === 'TD'){
-		x.target.style.backgroundColor = gridc.value; 
+		x.target.style.backgroundColor = gridColor.value; 
 		}
 	});
 
